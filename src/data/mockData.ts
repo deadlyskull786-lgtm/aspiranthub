@@ -1,0 +1,171 @@
+import { StatMetric, ActivityItem, ProjectRecord, NotificationItem } from '../types';
+
+export const INITIAL_METRICS: StatMetric[] = [
+  {
+    id: 'metric-revenue',
+    label: 'Total Revenue',
+    value: '$128,420',
+    change: '+14.2%',
+    isPositive: true,
+    timeframe: 'vs last month',
+    secondaryLabel: '$112,400 prev',
+  },
+  {
+    id: 'metric-users',
+    label: 'Active Customers',
+    value: '3,842',
+    change: '+8.1%',
+    isPositive: true,
+    timeframe: 'vs last month',
+    secondaryLabel: '340 new this week',
+  },
+  {
+    id: 'metric-conversion',
+    label: 'Conversion Rate',
+    value: '4.68%',
+    change: '+0.74%',
+    isPositive: true,
+    timeframe: 'vs last month',
+    secondaryLabel: '3.94% benchmark',
+  },
+  {
+    id: 'metric-latency',
+    label: 'Avg Response Time',
+    value: '184ms',
+    change: '-18ms',
+    isPositive: true,
+    timeframe: 'vs last week',
+    secondaryLabel: '99.98% uptime',
+  },
+];
+
+export const INITIAL_PROJECTS: ProjectRecord[] = [
+  {
+    id: 'proj-1',
+    name: 'Unified Design System',
+    category: 'Design & Eng',
+    client: 'Starlight Labs',
+    budget: '$34,500',
+    deadline: 'Oct 24, 2026',
+    progress: 82,
+    status: 'Active',
+  },
+  {
+    id: 'proj-2',
+    name: 'Customer Portal V2',
+    category: 'Web App',
+    client: 'Acuity Health',
+    budget: '$52,000',
+    deadline: 'Nov 12, 2026',
+    progress: 65,
+    status: 'Active',
+  },
+  {
+    id: 'proj-3',
+    name: 'Telemetry Migration',
+    category: 'Infrastructure',
+    client: 'Apex Logistics',
+    budget: '$18,200',
+    deadline: 'Sep 30, 2026',
+    progress: 95,
+    status: 'Under Review',
+  },
+  {
+    id: 'proj-4',
+    name: 'Payments SDK v4',
+    category: 'Backend Services',
+    client: 'Finova Global',
+    budget: '$44,000',
+    deadline: 'Dec 05, 2026',
+    progress: 38,
+    status: 'Active',
+  },
+  {
+    id: 'proj-5',
+    name: 'Security Audit & Compliance',
+    category: 'Security',
+    client: 'Vault Systems',
+    budget: '$26,800',
+    deadline: 'Sep 18, 2026',
+    progress: 100,
+    status: 'Completed',
+  },
+];
+
+export const INITIAL_ACTIVITIES: ActivityItem[] = [
+  {
+    id: 'act-1',
+    user: {
+      name: 'Sarah Chen',
+      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80',
+      email: 'sarah.chen@example.com',
+    },
+    action: 'merged pull request into',
+    target: 'main (#418)',
+    timestamp: '12m ago',
+    status: 'completed',
+  },
+  {
+    id: 'act-2',
+    user: {
+      name: 'Marcus Vance',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80',
+      email: 'marcus.v@example.com',
+    },
+    action: 'deployed staging environment for',
+    target: 'Telemetry Migration',
+    timestamp: '42m ago',
+    status: 'completed',
+  },
+  {
+    id: 'act-3',
+    user: {
+      name: 'Elena Rostova',
+      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80',
+      email: 'elena.r@example.com',
+    },
+    action: 'submitted client invoice for',
+    target: '$34,500 milestone',
+    timestamp: '2h ago',
+    status: 'completed',
+  },
+  {
+    id: 'act-4',
+    user: {
+      name: 'David Kim',
+      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=80',
+      email: 'david.k@example.com',
+    },
+    action: 'flagged dependency warning on',
+    target: 'Customer Portal V2',
+    timestamp: '4h ago',
+    status: 'flagged',
+  },
+];
+
+export const INITIAL_NOTIFICATIONS: NotificationItem[] = [
+  {
+    id: 'notif-1',
+    title: 'Deployment Succeeded',
+    description: 'Release v2.4.1 has rolled out to 100% of staging pods without errors.',
+    time: '10m ago',
+    read: false,
+    type: 'success',
+  },
+  {
+    id: 'notif-2',
+    title: 'High Resource Usage',
+    description: 'Database replica 02 reached 84% memory threshold.',
+    time: '1h ago',
+    read: false,
+    type: 'warning',
+  },
+  {
+    id: 'notif-3',
+    title: 'New Team Invitation',
+    description: 'Alisa Morales accepted your team workspace invitation.',
+    time: '3h ago',
+    read: true,
+    type: 'info',
+  },
+];

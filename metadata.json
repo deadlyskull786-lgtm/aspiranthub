@@ -1,0 +1,6 @@
+{
+  "name": "AspirantHub - JEE, NEET & KCET PYQ Prep",
+  "description": "Comprehensive competitive exam PYQ practice arena for JEE, NEET, and KCET with class & chapter filters, EXP gamification, leaderboard, and Gemini AI study assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
